@@ -7,8 +7,14 @@
   </head>
   <body>
     <div id="app">
-      <p>{{ text }}</p>
-      <button @click="handleClick">Push me!</button>
+      <p>{{ count }}</p>
+      <p>
+        <button @click="minus10">-10</button>
+        <button @click="minus1">-1</button>
+        <button @click="set0">0</button>
+        <button @click="plus1">+1</button>
+        <button @click="plus10">+10</button>
+      </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./script/script.js"></script>

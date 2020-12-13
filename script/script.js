@@ -2,12 +2,24 @@ const app = new Vue({
   el: '#app',
   data() {
     return {
-      text: 'Hello, Vue.js from data property!!'
+      count: 0
     };
   },
   methods: {
-    handleClick() {
-      this.text = "button is clicked";
+    minus10() {
+      this.count -= 10;
+    },
+    minus1() {
+      this.count--;
+    },
+    set0() {
+      this.count = 0;
+    },
+    plus1() {
+      this.count++;
+    },
+    plus10() {
+      this.count += 10;
     }
   }
 });
